@@ -8,10 +8,17 @@ import visaserviceimage from "../assets/visa_service_image.jpg";
 const Property = () => {
   return (
     <>
-    <div className="text-black font-black uppercase mt-4 flex justify-center text-4xl"> Our Service
+    <div className="mb-10">
 
-    </div>
-     <div className="mt-10  ">
+  
+     <div class="flex flex-col items-center">
+        <h1 class="text-black bold">Our Services</h1>
+       
+        <span className="break-normal">Al Amar Services.</span>
+       
+      
+      </div>
+     <div className="">
       <div class="flex flex-col md:flex-row gap-3 justify-center p-6 text-green-400   ">
          <div className="flex flex-col bg-glass rounded-lg   border border-glass-border  w-full items-center  p-3 backdrop-blur-lg ">
            
@@ -58,6 +65,7 @@ const Property = () => {
           <p className="text-black font-black uppercase mt-4 flex justify-center">visa service</p>
          </div>
        </div>
+     </div>
      </div>
 
 

@@ -1,28 +1,29 @@
 import "./App.css";
+import About from "./components/About";
+import Carousels from "./components/Carsoules";
 
-import Compisition from "./components/Compisition";
-import Messages from "./components/Messages";
-import Navabar from "./components/Navabar";
 import Property from "./components/Property";
-import Carsoules from "./components/carousels/Carsoules";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Client from "./components/Client";
+import Header from "./components/header/Header"
 
+import Message from "./components/Message";
+import Slider from "./components/slide/Slider";
+// import Navbar from "./components/Navbar";
 
-
+import { BrowserRouter as Router, } from 'react-router-dom';
 function App() {
   return (
-    <div>
-  
-
-      <Navabar />
-      <Header />
-      <Carsoules />
-      <Compisition />
-      <Messages />
+    <div className="p-5 gap-10">
+      <Router>
+      {/* <Navbar /> */}
+      <Header/>
+      </Router>
+      
+      <Carousels />
+      <Message />
+      <About />
       <Property />
-<Client/>
+      <Slider />
       <Footer />
     </div>
   );
